@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XbvgmVqkccE5xijXgJPXPJa8DrrGrWElNmB33LCYlnftBlTGD8eGgpBUEkxc3ExbgiD0dqVZjZuPohcpXB37XA==",
+  "dgSpecHash": "9zerC1uj9gG0SizAE0R4oVuZ5qUB2AWIJbaupgebPLbAZ7d/Cf0gBwD6FBrNy4Pp5psilEn52zwyx1kPFdo1Pg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\abhad\\source\\repos\\RemoteState-Assignment\\AssignmentMongoCRUD\\AssignmentMongoCRUD\\AssignmentMongoCRUD.csproj",
+  "projectFilePath": "C:\\Users\\abhad\\source\\repos\\AssignmentMongoCRUD\\AssignmentMongoCRUD\\AssignmentMongoCRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abhad\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\abhad\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

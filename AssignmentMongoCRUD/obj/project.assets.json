@@ -1183,11 +1183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abhad\\source\\repos\\RemoteState-Assignment\\AssignmentMongoCRUD\\AssignmentMongoCRUD\\AssignmentMongoCRUD.csproj",
+      "projectUniqueName": "C:\\Users\\abhad\\source\\repos\\AssignmentMongoCRUD\\AssignmentMongoCRUD\\AssignmentMongoCRUD.csproj",
       "projectName": "AssignmentMongoCRUD",
-      "projectPath": "C:\\Users\\abhad\\source\\repos\\RemoteState-Assignment\\AssignmentMongoCRUD\\AssignmentMongoCRUD\\AssignmentMongoCRUD.csproj",
+      "projectPath": "C:\\Users\\abhad\\source\\repos\\AssignmentMongoCRUD\\AssignmentMongoCRUD\\AssignmentMongoCRUD.csproj",
       "packagesPath": "C:\\Users\\abhad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abhad\\source\\repos\\RemoteState-Assignment\\AssignmentMongoCRUD\\AssignmentMongoCRUD\\obj\\",
+      "outputPath": "C:\\Users\\abhad\\source\\repos\\AssignmentMongoCRUD\\AssignmentMongoCRUD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
