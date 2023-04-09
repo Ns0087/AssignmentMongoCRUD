@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AssignmentMongoCRUD"
+    "\\AssignmentMongoCRUD",
+    "\\AssignmentMongoCRUD\\Controllers"
   ],
-  "SelectedNode": "\\AssignmentMongoCRUD\\obj",
+  "SelectedNode": "\\AssignmentMongoCRUD\\DAL",
   "PreviewInSolutionExplorer": false
 }
