@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AssignmentMongoCRUD.Models.RequestViewModel;
+using AssignmentMongoCRUD.Models.ResponseViewModel;
+using AssignmentMongoCRUD.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +11,46 @@ namespace AssignmentMongoCRUD.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        // GET: api/<EmployeeController>
+        private IEmployeeService _employeeService;
+
+        public EmployeeController(IServiceProvider serviceProvider)
+        {
+            _employeeService = serviceProvider.GetRequiredService<IEmployeeService>();
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<EmployeeResponseModel>> GetAllEmployeesAsync()
         {
-            return new string[] { "value1", "value2" };
+
+            var result = await _employeeService.GetAllAsync();
+            return result;
+
         }
 
-        // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<EmployeeResponseModel> GetEmployeeByIdAsync(string id)
         {
-            return "value";
+            var result = await _employeeService.GetByIdAsync(id);
+
+            return result;
         }
 
-        // POST api/<EmployeeController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task AddEmployeeAsync(EmployeeRequestModel employee)
         {
+            await _employeeService.CreateAsync(employee);
         }
 
-        // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task UpdateEmployeeAsync(string id, EmployeeRequestModel employee)
         {
+            await _employeeService.UpdateAsync(id, employee);
         }
 
-        // DELETE api/<EmployeeController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task DeleteEmployeeByIdAsync(string id)
         {
+            await _employeeService.DeleteAsync(id);
         }
     }
 }
